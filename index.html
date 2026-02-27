@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookSky</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <h1>BookVault</h1>
+    </div>
+
+    <!-- Book Container -->
+    <div class="container">
+      <!-- Sample Book Card -->
+      <div class="book-container">
+        <h2>Rich Dad Poor Dad</h2>
+        <h5>Robert Kiyosaki</h5>
+        <p>
+          A personal finance classic that contrasts two different mindsets about
+          money and investing.
+        </p>
+        <button class="delete-btn">Delete</button>
+      </div>
+    </div>
+
+    <!-- Popup Overlay -->
+    <div class="popup-overlay"></div>
+
+    <!-- Popup Box -->
+    <div class="popup-box">
+      <h2>Add New Book</h2>
+
+      <form>
+        <input
+          type="text"
+          placeholder="Enter Book Title"
+          id="book-title-input"
+        />
+
+        <input
+          type="text"
+          placeholder="Enter Author Name"
+          id="book-author-input"
+        />
+
+        <textarea
+          placeholder="Enter Short Description"
+          id="book-description-input"
+        ></textarea>
+
+        <button id="add-book">Add</button>
+        <button id="cancel-popup">Cancel</button>
+      </form>
+    </div>
+
+    <!-- Floating Add Button -->
+    <button id="add-popup-button" class="add-button">+</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

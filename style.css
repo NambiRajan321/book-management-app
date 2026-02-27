@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #7c3aed;
+  padding: 15px 20px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Book Container Wrapper */
+.container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Book Card */
+.book-container {
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  width: 280px;
+  border-radius: 12px;
+  transition: 0.3s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book-container:hover {
+  transform: translateY(-5px);
+}
+
+.book-container h2 {
+  color: #7c3aed;
+  margin-bottom: 5px;
+}
+
+.book-container h5 {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.book-container button {
+  background-color: #7c3aed;
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.book-container button:hover {
+  background-color: #ff4045;
+  color: white;
+}
+
+/* Floating Add Button */
+.add-button {
+  background-color: #7c3aed;
+  color: white;
+  font-size: 35px;
+  border: none;
+  border-radius: 50%;
+  padding: 20px 28px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.add-button:hover {
+  transform: scale(1.1);
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/* Popup Box */
+.popup-box {
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.popup-box h2 {
+  margin-bottom: 15px;
+  color: #7c3aed;
+}
+
+.popup-box input,
+.popup-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.popup-box textarea {
+  resize: none;
+  height: 80px;
+}
+
+.popup-box button {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#add-book {
+  background-color: #7c3aed;
+  color: white;
+}
+
+#cancel-popup {
+  background-color: #ddd;
+}
